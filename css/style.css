@@ -1,118 +1,248 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #dff6ff;
-    color: #03396c;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    cursor:none;
 }
 
-/* Cabeçalho */
-header {
-    background: linear-gradient(90deg, #0288d1, #00acc1);
-    color: rgb(4, 79, 122);
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+body{
+    background:#07141f;
+    color:white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 40px;
+/* HEADER */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#04101a;
+
+    position:fixed;
+
+    width:100%;
+
+    z-index:1000;
 }
 
-header p {
-    font-size: 18px;
-    margin-top: 10px;
+.logo{
+
+    font-size:30px;
+    color:#00cfff;
+    font-weight:bold;
 }
 
-/* Menu */
-nav {
-    background: #0277bd;
-    padding: 15px;
-    text-align: center;
+nav{
+    display:flex;
+    gap:20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s;
+nav a{
+
+    text-decoration:none;
+    color:white;
+
+    transition:0.3s;
 }
 
-nav a:hover {
-    color: #f70404;
-    border-bottom: 2px solid #fd0303;
-    padding-bottom: 5px;
+nav a:hover{
+    color:#00cfff;
 }
 
-/* Conteúdo */
-main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 25px;
+/* HERO */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
 }
 
-/* Seções */
-section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+.hero h1{
+    font-size:70px;
 }
 
-section:hover {
-    transform: scale(1.01);
+.hero p{
+    margin:20px 0;
+    font-size:20px;
 }
 
-h2 {
-    color: #0288d1;
-    margin-bottom: 15px;
+/* BOTÃO */
+
+button{
+
+    padding:15px 35px;
+
+    border:none;
+    border-radius:50px;
+
+    background:#00cfff;
+
+    color:white;
+
+    font-size:18px;
+
+    transition:0.4s;
 }
 
-/* Lista */
-ul {
-    list-style: square;
-    padding-left: 25px;
+button:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 20px #00cfff;
 }
 
-li {
-    margin-bottom: 10px;
-    font-size: 18px;
+/* CARDS */
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:100px 5%;
 }
 
-/* Imagem */
-img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+.card{
+
+    width:300px;
+
+    background:#0e2433;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:0.4s;
 }
 
-/* Botão */
-button {
-    background: #00acc1;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px rgba(0,207,255,.5);
 }
 
-button:hover {
-    background: #00838f;
-    transform: scale(1.05);
+/* PÁGINAS */
+
+.page{
+
+    padding:150px 10%;
+    min-height:100vh;
 }
 
+.page h1{
 
-footer {
-    background: #0288d1;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-bottom:30px;
+
+    color:#00cfff;
+}
+
+/* DICAS */
+
+.dica{
+
+    background:#0e2433;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+/* FORM */
+
+form{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+    max-width:600px;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+}
+
+textarea{
+    resize:none;
+    height:150px;
+}
+
+/* FOOTER */
+
+footer{
+
+    padding:20px;
+
+    text-align:center;
+
+    background:#04101a;
+}
+
+/* CURSOR PEIXE */
+
+.peixe-cursor{
+
+    position:fixed;
+
+    width:40px;
+    height:40px;
+
+    background-image:url('https://png.pngtree.com/png-vector/20230919/ourmid/pngtree-fresh-nile-tilapia-or-pla-nin-in-thai-freshwater-fish-isolated-png-image_10086767.png');
+
+    background-size:contain;
+    background-repeat:no-repeat;
+
+    pointer-events:none;
+
+    z-index:99999;
+
+    transform:translate(-50%, -50%);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes pulsar{
+
+    0%{
+        transform:translate(-50%, -50%) scale(1);
+    }
+
+    50%{
+        transform:translate(-50%, -50%) scale(1.4);
+    }
+
+    100%{
+        transform:translate(-50%, -50%) scale(1);
+    }
 }
