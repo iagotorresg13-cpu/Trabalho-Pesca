@@ -3,135 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo da Pesca</title>
+    <title>FishMaster</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #dff6ff;
-            color: #03396c;
-        }
-
-        header {
-            background: #0288d1;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        nav {
-            background: #0277bd;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffe082;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #0288d1;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        footer {
-            background: #0288d1;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        button {
-            background: #00acc1;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #00838f;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>🎣 Mundo da Pesca</h1>
-        <p>Aprenda mais sobre pesca esportiva e natureza</p>
-    </header>
+<header>
+
+    <div class="logo">FishMaster</div>
 
     <nav>
-        <a href="#">Dicas</a>
-        <a href="#">Peixes</a>
-        <a href="#">Equipamentos</a>
-        
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="dicas.html">Dicas</a>
+        <a href="contato.html">Contato</a>
     </nav>
 
-    <main>
+</header>
 
-        <section>
-            <h2>Sobre a Pesca</h2>
-            <p>
-                A pesca é uma atividade muito antiga e também um esporte praticado
-                por milhões de pessoas no mundo inteiro. Além de divertida,
-                ela ajuda no contato com a natureza e proporciona momentos de lazer.
-            </p>
-        </section>
+<section class="hero">
 
-        <section>
-            <h2>Peixes Mais Conhecidos Do Brasil</h2>
+    <div class="hero-content">
 
-            <ul>
-                <li>Tucunaré</li>
-                <li>Pirarucu</li>
-                <li>Lambari</li>
-                <li>Tilápia</li>
-                <li>Pintado</li>
-            </ul>
-        </section>
+        <h1>Explore o Mundo da Pesca</h1>
 
-        <section>
-            <h2>Imagem de Pesca</h2>
+        <p>
+            Descubra técnicas, equipamentos e os melhores lugares do planeta.
+        </p>
 
-            <img src="ca5ec510c30fca93ffaa748f61a7bd61-brazil-fishing.jpg"="Imagem de pesca">
+        <button id="btnExplorar">Explorar</button>
 
-            <br><br>
-        </section>
+    </div>
 
-    </main>
+</section>
 
-    <footer>
-        <p>© 2026 Mundo da Pesca - Trabalho Escolar</p>
-    </footer>
+<section class="cards">
+
+    <div class="card">
+        <h2>🐟 Peixes Raros</h2>
+        <p>Conheça espécies incríveis ao redor do mundo.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎣 Equipamentos</h2>
+        <p>Veja os melhores equipamentos para cada pesca.</p>
+    </div>
+
+    <div class="card">
+        <h2>🌎 Lugares</h2>
+        <p>Explore rios, mares e lagos perfeitos.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 FishMaster</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
